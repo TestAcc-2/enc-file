@@ -1,5 +1,3 @@
-before_install:
-- openssl aes-256-cbc -K $encrypted_4b6fcb2d521e_key -iv $encrypted_4b6fcb2d521e_iv
-  -in test.txt.enc -out test1.txt -d
-
-- cat test1.txt
+language: generic
+script:
+- echo $(cat test1.txt)
